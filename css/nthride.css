@@ -1,0 +1,175 @@
+:root {
+    --text: #f2f0eb;
+    --background: #111315;
+    --primary: #c52a32;
+    --secondary: #343a40;
+    --accent: #e5a72b;
+    --link: #6db7ff;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--text);
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    color: var(--text);
+}
+
+nav {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.start-here {
+    background-color: var(--secondary);
+    border-left: 5px solid var(--accent);
+    padding: 20px;
+}
+
+.step-label {
+    color: var(--accent);
+    font-weight: bold;
+    margin: 0;
+}
+
+.start-here h2 {
+    margin-top: 5px;
+}
+
+.path-container {
+    display: flex;
+    gap: 20px;
+}
+
+.path {
+    flex: 1;
+    background-color: var(--secondary);
+    padding: 20px;
+}
+
+.path h3 {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    flex: 1 1 300px;
+    background-color: var(--secondary);
+    padding: 20px;
+}
+
+.category h3 {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--secondary);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--background);
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+    text-align: center;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+main a {
+    color: var(--link);
+}
+
+main a:hover {
+    color: var(--accent);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    main {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .path-container {
+        display: block;
+    }
+
+    .path {
+        margin-bottom: 20px;
+    }
+
+}
