@@ -135,6 +135,84 @@ main a:hover {
     color: var(--accent);
 }
 
+
+/* Motorcycle progression preview */
+.ride-progression {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin: 20px auto 28px;
+    max-width: 1000px;
+}
+
+.ride-progression figure {
+    flex: 1 1 0;
+    max-width: 470px;
+    margin: 0;
+    background-color: var(--secondary);
+    padding: 12px;
+}
+
+.ride-progression img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ride-progression figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.progression-arrow {
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 16px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+.safety-video video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-top: 15px;
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
 
@@ -164,6 +242,20 @@ main a:hover {
         padding: 15px;
     }
 
+    .ride-progression {
+        flex-direction: column;
+    }
+
+    .progression-arrow {
+        transform: rotate(90deg);
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .path-container {
         display: block;
     }
@@ -171,5 +263,4 @@ main a:hover {
     .path {
         margin-bottom: 20px;
     }
-
 }
